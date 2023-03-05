@@ -1,0 +1,138 @@
+/* Import stars.css */
+@import url('stars.css');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* The background div contains the stars that are created
+and animted in the stars.css file */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    background-color: #080710;
+    height: 100vh;
+}
+
+/* Card */
+.card {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icons a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.icons a i {
+    transition: all 0.2s ease-in-out;
+}
+
+.icons a i:hover {
+    color: #f1c40f;
+    transform: scale(1.2);
+}
+
+.icons #discord {
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #555;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    /* Auto Width */
+    white-space: nowrap;
+    width: auto;
+}
+
+.copied {
+    color: #2c3e50;
+}
+
+#discord-tooltip.copied {
+    visibility: visible;
+    opacity: 1;
+    color: #fff;
+}
+
+#discord-tooltip {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+}
