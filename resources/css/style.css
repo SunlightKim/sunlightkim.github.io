@@ -55,6 +55,13 @@ body {
     margin-bottom: 20px;
 }
 
+/* Adapt the card to mobile devices */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+
 .card h1 {
     font-size: 36px;
     margin-bottom: 20px;
