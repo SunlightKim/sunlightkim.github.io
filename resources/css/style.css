@@ -56,11 +56,9 @@ body {
 }
 
 /* Adapt the card to mobile devices */
-@media screen and (max-width: 768px) {
-    .card {
-        width: 90%;
-    }
-}
+/* TODO: Fix that shit and make sure the website 
+ * is not ugly on mobile devices
+*/
 
 .card h1 {
     font-size: 36px;
