@@ -1,3 +1,6 @@
+/* Importing the CSS files */
+@import url('css/style.css');
+
 /* Div 'sw-video' : make it 1280x720, center it (vertically and horizontally) on the page
 and make the video inside it fill the div */
 .sw-video {
